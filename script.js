@@ -7,7 +7,7 @@ document.getElementById("checkButton")
    const resultDiv = document.getElementById("result");
    resultDiv.innerHTML = "";
    
-   if (ageValue <= 120) {
+   if ((ageValue <= 120) || (ageValue > 0)) {
     if (ageValue >= 18) {
         resultDiv.innerHTML += "<i>You are eligible to vote.</i><br/>";
     }else{
